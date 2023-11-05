@@ -7,7 +7,7 @@ link pattu clone kottu
 * EA - Euclidean Algorithm
 # steps to run 
 * git clone url
-* cd cnscode
+* cd cns2
 * gedit filename ( to edit and shi)
 * python3/gcc filename to run the code
 # Clone chesko, pandaga chesko 
