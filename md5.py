@@ -60,4 +60,6 @@ def md5(data):
     return result
 message = input("Enter the string: ")
 hashed = md5(message.encode('utf-8'))
-print("MD5 Hash:", hashed)
+print("MD5 Hash (in hexadecimal):", hashed)
+binary_result = bin(int(hashed, 16))[2:]
+print("MD5 Hash (in binary): ", binary_result)

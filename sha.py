@@ -52,6 +52,9 @@ def sha1(data):
         h2 = h2 + c & 0xffffffff
         h3 = h3 + d & 0xffffffff
         h4 = h4 + e & 0xffffffff
-    return '%08x%08x%08x%08x%08x' % (h0, h1, h2, h3, h4)
+    hex_hash = '%08x%08x%08x%08x%08x' % (h0, h1, h2, h3, h4)
+    print("SHA (Hexadecimal): ", hex_hash)
+    binary_result = bin(int(hex_hash, 16))[2:]
+    return binary_result
 str=input("Enter the string: ")
-print (sha1(str))
+print ("SHA (Binary): ", sha1(str))
