@@ -1,0 +1,24 @@
+OpenSSL:
+->sudo apt update
+->sudo apt install openssl
+->openssl version -a
+->Creating: openssl req -nodes -newkey rsa:2048 -keyout example.key -out example.crt -x509 -days 365
+->Display Digital Certificate: openssl x509 -in example.crt -text -noout
+->Verify: openssl rsa -noout -modulus -in example.key | openssl sha256
+
+GNUPG:
+->sudo apt-get install gnupg
+->gpg --gen-key
+->Signing: gpg --sign my_file.txt
+->Verifying: gpg --verify gpg.docx.gpg
+
+HashCat:
+->sudo apt-get install hashcat
+
+Cryptlib:
+->sudo dnf makecache
+->sudo dnf install cryptlib.i686
+
+Crypto++
+->sudo apt-get install libcrypto++-dev libcrypto++-doc libcrypto++-utils
+
